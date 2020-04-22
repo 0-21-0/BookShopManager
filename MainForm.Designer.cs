@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel_DashBoard = new System.Windows.Forms.Panel();
+            this.Button_Settings = new System.Windows.Forms.Button();
+            this.Button_ViewSales = new System.Windows.Forms.Button();
+            this.Button_Users = new System.Windows.Forms.Button();
+            this.Button_Expenses = new System.Windows.Forms.Button();
+            this.Button_Purchased = new System.Windows.Forms.Button();
+            this.Button_SaleBooks = new System.Windows.Forms.Button();
+            this.Button_Home = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Label_Title = new System.Windows.Forms.Label();
@@ -39,7 +46,6 @@
             this.Button_Close = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.Button_Home = new System.Windows.Forms.Button();
             this.panel_DashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Logo)).BeginInit();
@@ -49,6 +55,12 @@
             // panel_DashBoard
             // 
             this.panel_DashBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel_DashBoard.Controls.Add(this.Button_Settings);
+            this.panel_DashBoard.Controls.Add(this.Button_ViewSales);
+            this.panel_DashBoard.Controls.Add(this.Button_Users);
+            this.panel_DashBoard.Controls.Add(this.Button_Expenses);
+            this.panel_DashBoard.Controls.Add(this.Button_Purchased);
+            this.panel_DashBoard.Controls.Add(this.Button_SaleBooks);
             this.panel_DashBoard.Controls.Add(this.Button_Home);
             this.panel_DashBoard.Controls.Add(this.panel1);
             this.panel_DashBoard.Dock = System.Windows.Forms.DockStyle.Left;
@@ -56,6 +68,132 @@
             this.panel_DashBoard.Name = "panel_DashBoard";
             this.panel_DashBoard.Size = new System.Drawing.Size(215, 720);
             this.panel_DashBoard.TabIndex = 0;
+            // 
+            // Button_Settings
+            // 
+            this.Button_Settings.FlatAppearance.BorderSize = 0;
+            this.Button_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Settings.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button_Settings.ForeColor = System.Drawing.Color.White;
+            this.Button_Settings.Image = ((System.Drawing.Image)(resources.GetObject("Button_Settings.Image")));
+            this.Button_Settings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Settings.Location = new System.Drawing.Point(0, 450);
+            this.Button_Settings.Margin = new System.Windows.Forms.Padding(0);
+            this.Button_Settings.Name = "Button_Settings";
+            this.Button_Settings.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.Button_Settings.Size = new System.Drawing.Size(215, 50);
+            this.Button_Settings.TabIndex = 1;
+            this.Button_Settings.Text = "   Settings";
+            this.Button_Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Button_Settings.UseVisualStyleBackColor = true;
+            // 
+            // Button_ViewSales
+            // 
+            this.Button_ViewSales.FlatAppearance.BorderSize = 0;
+            this.Button_ViewSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_ViewSales.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button_ViewSales.ForeColor = System.Drawing.Color.White;
+            this.Button_ViewSales.Image = ((System.Drawing.Image)(resources.GetObject("Button_ViewSales.Image")));
+            this.Button_ViewSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_ViewSales.Location = new System.Drawing.Point(0, 400);
+            this.Button_ViewSales.Margin = new System.Windows.Forms.Padding(0);
+            this.Button_ViewSales.Name = "Button_ViewSales";
+            this.Button_ViewSales.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.Button_ViewSales.Size = new System.Drawing.Size(215, 50);
+            this.Button_ViewSales.TabIndex = 1;
+            this.Button_ViewSales.Text = "   View Sales";
+            this.Button_ViewSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Button_ViewSales.UseVisualStyleBackColor = true;
+            // 
+            // Button_Users
+            // 
+            this.Button_Users.FlatAppearance.BorderSize = 0;
+            this.Button_Users.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Users.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button_Users.ForeColor = System.Drawing.Color.White;
+            this.Button_Users.Image = ((System.Drawing.Image)(resources.GetObject("Button_Users.Image")));
+            this.Button_Users.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Users.Location = new System.Drawing.Point(0, 350);
+            this.Button_Users.Margin = new System.Windows.Forms.Padding(0);
+            this.Button_Users.Name = "Button_Users";
+            this.Button_Users.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.Button_Users.Size = new System.Drawing.Size(215, 50);
+            this.Button_Users.TabIndex = 1;
+            this.Button_Users.Text = "   Users";
+            this.Button_Users.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Button_Users.UseVisualStyleBackColor = true;
+            // 
+            // Button_Expenses
+            // 
+            this.Button_Expenses.FlatAppearance.BorderSize = 0;
+            this.Button_Expenses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Expenses.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button_Expenses.ForeColor = System.Drawing.Color.White;
+            this.Button_Expenses.Image = ((System.Drawing.Image)(resources.GetObject("Button_Expenses.Image")));
+            this.Button_Expenses.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Expenses.Location = new System.Drawing.Point(0, 300);
+            this.Button_Expenses.Margin = new System.Windows.Forms.Padding(0);
+            this.Button_Expenses.Name = "Button_Expenses";
+            this.Button_Expenses.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.Button_Expenses.Size = new System.Drawing.Size(215, 50);
+            this.Button_Expenses.TabIndex = 1;
+            this.Button_Expenses.Text = "   Expenses";
+            this.Button_Expenses.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Button_Expenses.UseVisualStyleBackColor = true;
+            // 
+            // Button_Purchased
+            // 
+            this.Button_Purchased.FlatAppearance.BorderSize = 0;
+            this.Button_Purchased.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Purchased.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button_Purchased.ForeColor = System.Drawing.Color.White;
+            this.Button_Purchased.Image = ((System.Drawing.Image)(resources.GetObject("Button_Purchased.Image")));
+            this.Button_Purchased.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Purchased.Location = new System.Drawing.Point(0, 250);
+            this.Button_Purchased.Margin = new System.Windows.Forms.Padding(0);
+            this.Button_Purchased.Name = "Button_Purchased";
+            this.Button_Purchased.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.Button_Purchased.Size = new System.Drawing.Size(215, 50);
+            this.Button_Purchased.TabIndex = 1;
+            this.Button_Purchased.Text = "   Purchased";
+            this.Button_Purchased.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Button_Purchased.UseVisualStyleBackColor = true;
+            // 
+            // Button_SaleBooks
+            // 
+            this.Button_SaleBooks.FlatAppearance.BorderSize = 0;
+            this.Button_SaleBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_SaleBooks.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button_SaleBooks.ForeColor = System.Drawing.Color.White;
+            this.Button_SaleBooks.Image = ((System.Drawing.Image)(resources.GetObject("Button_SaleBooks.Image")));
+            this.Button_SaleBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_SaleBooks.Location = new System.Drawing.Point(0, 200);
+            this.Button_SaleBooks.Margin = new System.Windows.Forms.Padding(0);
+            this.Button_SaleBooks.Name = "Button_SaleBooks";
+            this.Button_SaleBooks.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.Button_SaleBooks.Size = new System.Drawing.Size(215, 50);
+            this.Button_SaleBooks.TabIndex = 1;
+            this.Button_SaleBooks.Text = "   Sale Books";
+            this.Button_SaleBooks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Button_SaleBooks.UseVisualStyleBackColor = true;
+            // 
+            // Button_Home
+            // 
+            this.Button_Home.FlatAppearance.BorderSize = 0;
+            this.Button_Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Home.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Button_Home.ForeColor = System.Drawing.Color.White;
+            this.Button_Home.Image = ((System.Drawing.Image)(resources.GetObject("Button_Home.Image")));
+            this.Button_Home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Home.Location = new System.Drawing.Point(0, 150);
+            this.Button_Home.Margin = new System.Windows.Forms.Padding(0);
+            this.Button_Home.Name = "Button_Home";
+            this.Button_Home.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.Button_Home.Size = new System.Drawing.Size(215, 50);
+            this.Button_Home.TabIndex = 1;
+            this.Button_Home.Text = "   Home";
+            this.Button_Home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Button_Home.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -151,21 +289,6 @@
             this.panel4.Size = new System.Drawing.Size(985, 570);
             this.panel4.TabIndex = 3;
             // 
-            // Button_Home
-            // 
-            this.Button_Home.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Button_Home.FlatAppearance.BorderSize = 0;
-            this.Button_Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Home.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Home.ForeColor = System.Drawing.Color.White;
-            this.Button_Home.Location = new System.Drawing.Point(0, 150);
-            this.Button_Home.Margin = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.Button_Home.Name = "Button_Home";
-            this.Button_Home.Size = new System.Drawing.Size(215, 50);
-            this.Button_Home.TabIndex = 1;
-            this.Button_Home.Text = "button2";
-            this.Button_Home.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -202,6 +325,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button Button_Home;
+        private System.Windows.Forms.Button Button_Settings;
+        private System.Windows.Forms.Button Button_ViewSales;
+        private System.Windows.Forms.Button Button_Users;
+        private System.Windows.Forms.Button Button_Expenses;
+        private System.Windows.Forms.Button Button_Purchased;
+        private System.Windows.Forms.Button Button_SaleBooks;
     }
 }
 
