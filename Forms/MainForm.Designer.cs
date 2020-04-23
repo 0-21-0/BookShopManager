@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel_DashBoard = new System.Windows.Forms.Panel();
+            this.panel_CurrentSign = new System.Windows.Forms.Panel();
             this.Button_Settings = new System.Windows.Forms.Button();
             this.Button_ViewSales = new System.Windows.Forms.Button();
             this.Button_Users = new System.Windows.Forms.Button();
@@ -38,23 +40,34 @@
             this.Button_SaleBooks = new System.Windows.Forms.Button();
             this.Button_Home = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Label_Title = new System.Windows.Forms.Label();
+            this.Label_Position = new System.Windows.Forms.Label();
+            this.Label_ShopName = new System.Windows.Forms.Label();
             this.PictureBox_Logo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Button_Minimize = new System.Windows.Forms.Button();
             this.Button_Close = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.Label_UserRole = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Label_DateTime = new System.Windows.Forms.Label();
+            this.Label_UserName = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel_Controls = new System.Windows.Forms.Panel();
+            this.Timer_ChangeDashboardWidth = new System.Windows.Forms.Timer(this.components);
+            this.Timer_UpdateTime = new System.Windows.Forms.Timer(this.components);
+            this.Timer_MoveCurrentSign = new System.Windows.Forms.Timer(this.components);
             this.panel_DashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Logo)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_DashBoard
             // 
             this.panel_DashBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel_DashBoard.Controls.Add(this.panel_CurrentSign);
             this.panel_DashBoard.Controls.Add(this.Button_Settings);
             this.panel_DashBoard.Controls.Add(this.Button_ViewSales);
             this.panel_DashBoard.Controls.Add(this.Button_Users);
@@ -68,6 +81,14 @@
             this.panel_DashBoard.Name = "panel_DashBoard";
             this.panel_DashBoard.Size = new System.Drawing.Size(215, 720);
             this.panel_DashBoard.TabIndex = 0;
+            // 
+            // panel_CurrentSign
+            // 
+            this.panel_CurrentSign.BackColor = System.Drawing.Color.White;
+            this.panel_CurrentSign.Location = new System.Drawing.Point(0, 150);
+            this.panel_CurrentSign.Name = "panel_CurrentSign";
+            this.panel_CurrentSign.Size = new System.Drawing.Size(5, 50);
+            this.panel_CurrentSign.TabIndex = 2;
             // 
             // Button_Settings
             // 
@@ -86,6 +107,7 @@
             this.Button_Settings.Text = "   Settings";
             this.Button_Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_Settings.UseVisualStyleBackColor = true;
+            this.Button_Settings.Click += new System.EventHandler(this.Button_Settings_Click);
             // 
             // Button_ViewSales
             // 
@@ -104,6 +126,7 @@
             this.Button_ViewSales.Text = "   View Sales";
             this.Button_ViewSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_ViewSales.UseVisualStyleBackColor = true;
+            this.Button_ViewSales.Click += new System.EventHandler(this.Button_ViewSales_Click);
             // 
             // Button_Users
             // 
@@ -122,6 +145,7 @@
             this.Button_Users.Text = "   Users";
             this.Button_Users.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_Users.UseVisualStyleBackColor = true;
+            this.Button_Users.Click += new System.EventHandler(this.Button_Users_Click);
             // 
             // Button_Expenses
             // 
@@ -140,6 +164,7 @@
             this.Button_Expenses.Text = "   Expenses";
             this.Button_Expenses.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_Expenses.UseVisualStyleBackColor = true;
+            this.Button_Expenses.Click += new System.EventHandler(this.Button_Expenses_Click);
             // 
             // Button_Purchased
             // 
@@ -158,6 +183,7 @@
             this.Button_Purchased.Text = "   Purchased";
             this.Button_Purchased.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_Purchased.UseVisualStyleBackColor = true;
+            this.Button_Purchased.Click += new System.EventHandler(this.Button_Purchased_Click);
             // 
             // Button_SaleBooks
             // 
@@ -176,6 +202,7 @@
             this.Button_SaleBooks.Text = "   Sale Books";
             this.Button_SaleBooks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_SaleBooks.UseVisualStyleBackColor = true;
+            this.Button_SaleBooks.Click += new System.EventHandler(this.Button_SaleBooks_Click);
             // 
             // Button_Home
             // 
@@ -194,11 +221,12 @@
             this.Button_Home.Text = "   Home";
             this.Button_Home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_Home.UseVisualStyleBackColor = true;
+            this.Button_Home.Click += new System.EventHandler(this.Button_Home_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.Label_Title);
+            this.panel1.Controls.Add(this.Label_Position);
+            this.panel1.Controls.Add(this.Label_ShopName);
             this.panel1.Controls.Add(this.PictureBox_Logo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -206,27 +234,27 @@
             this.panel1.Size = new System.Drawing.Size(215, 150);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // Label_Position
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(28, 96);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Kangbashen Erdos";
+            this.Label_Position.AutoSize = true;
+            this.Label_Position.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label_Position.ForeColor = System.Drawing.Color.White;
+            this.Label_Position.Location = new System.Drawing.Point(28, 96);
+            this.Label_Position.Name = "Label_Position";
+            this.Label_Position.Size = new System.Drawing.Size(159, 22);
+            this.Label_Position.TabIndex = 1;
+            this.Label_Position.Text = "Kangbashen Erdos";
             // 
-            // Label_Title
+            // Label_ShopName
             // 
-            this.Label_Title.AutoSize = true;
-            this.Label_Title.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_Title.ForeColor = System.Drawing.Color.White;
-            this.Label_Title.Location = new System.Drawing.Point(30, 74);
-            this.Label_Title.Name = "Label_Title";
-            this.Label_Title.Size = new System.Drawing.Size(154, 22);
-            this.Label_Title.TabIndex = 1;
-            this.Label_Title.Text = "North Book Shop";
+            this.Label_ShopName.AutoSize = true;
+            this.Label_ShopName.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label_ShopName.ForeColor = System.Drawing.Color.White;
+            this.Label_ShopName.Location = new System.Drawing.Point(30, 74);
+            this.Label_ShopName.Name = "Label_ShopName";
+            this.Label_ShopName.Size = new System.Drawing.Size(154, 22);
+            this.Label_ShopName.TabIndex = 1;
+            this.Label_ShopName.Text = "North Book Shop";
             // 
             // PictureBox_Logo
             // 
@@ -237,11 +265,13 @@
             this.PictureBox_Logo.Size = new System.Drawing.Size(50, 50);
             this.PictureBox_Logo.TabIndex = 0;
             this.PictureBox_Logo.TabStop = false;
+            this.PictureBox_Logo.Click += new System.EventHandler(this.PictureBox_Logo_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.Button_Minimize);
             this.panel2.Controls.Add(this.Button_Close);
+            this.panel2.Controls.Add(this.label6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(215, 0);
             this.panel2.Name = "panel2";
@@ -250,6 +280,7 @@
             // 
             // Button_Minimize
             // 
+            this.Button_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Button_Minimize.FlatAppearance.BorderSize = 0;
             this.Button_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Minimize.Image = ((System.Drawing.Image)(resources.GetObject("Button_Minimize.Image")));
@@ -258,6 +289,7 @@
             this.Button_Minimize.Size = new System.Drawing.Size(50, 50);
             this.Button_Minimize.TabIndex = 0;
             this.Button_Minimize.UseVisualStyleBackColor = true;
+            this.Button_Minimize.Click += new System.EventHandler(this.Button_Minimize_Click);
             // 
             // Button_Close
             // 
@@ -271,23 +303,111 @@
             this.Button_Close.Size = new System.Drawing.Size(50, 50);
             this.Button_Close.TabIndex = 0;
             this.Button_Close.UseVisualStyleBackColor = true;
+            this.Button_Close.Click += new System.EventHandler(this.Button_Close_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.label6.Location = new System.Drawing.Point(39, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(362, 26);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "North Books Shop, NLI Market Erdos";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel3.Controls.Add(this.Label_UserRole);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.Label_DateTime);
+            this.panel3.Controls.Add(this.Label_UserName);
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(215, 50);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(985, 100);
             this.panel3.TabIndex = 2;
             // 
-            // panel4
+            // Label_UserRole
             // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(215, 150);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(985, 570);
-            this.panel4.TabIndex = 3;
+            this.Label_UserRole.AutoSize = true;
+            this.Label_UserRole.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label_UserRole.ForeColor = System.Drawing.Color.White;
+            this.Label_UserRole.Location = new System.Drawing.Point(138, 50);
+            this.Label_UserRole.Name = "Label_UserRole";
+            this.Label_UserRole.Size = new System.Drawing.Size(64, 22);
+            this.Label_UserRole.TabIndex = 1;
+            this.Label_UserRole.Text = "Admin";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(40, 50);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 22);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Role:";
+            // 
+            // Label_DateTime
+            // 
+            this.Label_DateTime.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Label_DateTime.AutoSize = true;
+            this.Label_DateTime.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label_DateTime.ForeColor = System.Drawing.Color.White;
+            this.Label_DateTime.Location = new System.Drawing.Point(841, 39);
+            this.Label_DateTime.Name = "Label_DateTime";
+            this.Label_DateTime.Size = new System.Drawing.Size(94, 22);
+            this.Label_DateTime.TabIndex = 1;
+            this.Label_DateTime.Text = "HH:mm:ss";
+            // 
+            // Label_UserName
+            // 
+            this.Label_UserName.AutoSize = true;
+            this.Label_UserName.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label_UserName.ForeColor = System.Drawing.Color.White;
+            this.Label_UserName.Location = new System.Drawing.Point(138, 28);
+            this.Label_UserName.Name = "Label_UserName";
+            this.Label_UserName.Size = new System.Drawing.Size(56, 22);
+            this.Label_UserName.TabIndex = 1;
+            this.Label_UserName.Text = "Reyes";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(40, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 22);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Wlecome：";
+            // 
+            // panel_Controls
+            // 
+            this.panel_Controls.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Controls.Location = new System.Drawing.Point(215, 150);
+            this.panel_Controls.Name = "panel_Controls";
+            this.panel_Controls.Size = new System.Drawing.Size(985, 570);
+            this.panel_Controls.TabIndex = 3;
+            // 
+            // Timer_ChangeDashboardWidth
+            // 
+            this.Timer_ChangeDashboardWidth.Interval = 20;
+            this.Timer_ChangeDashboardWidth.Tick += new System.EventHandler(this.Timer_ChangeDashboardWidth_Tick);
+            // 
+            // Timer_UpdateTime
+            // 
+            this.Timer_UpdateTime.Interval = 1000;
+            this.Timer_UpdateTime.Tick += new System.EventHandler(this.Timer_UpdateTime_Tick);
+            // 
+            // Timer_MoveCurrentSign
+            // 
+            this.Timer_MoveCurrentSign.Interval = 20;
+            this.Timer_MoveCurrentSign.Tick += new System.EventHandler(this.Timer_MoveCurrentSign_Tick);
             // 
             // MainForm
             // 
@@ -295,7 +415,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 720);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel_Controls);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel_DashBoard);
@@ -308,6 +428,9 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Logo)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -316,14 +439,14 @@
 
         private System.Windows.Forms.Panel panel_DashBoard;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label Label_Title;
+        private System.Windows.Forms.Label Label_Position;
+        private System.Windows.Forms.Label Label_ShopName;
         private System.Windows.Forms.PictureBox PictureBox_Logo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Button_Minimize;
         private System.Windows.Forms.Button Button_Close;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel_Controls;
         private System.Windows.Forms.Button Button_Home;
         private System.Windows.Forms.Button Button_Settings;
         private System.Windows.Forms.Button Button_ViewSales;
@@ -331,6 +454,16 @@
         private System.Windows.Forms.Button Button_Expenses;
         private System.Windows.Forms.Button Button_Purchased;
         private System.Windows.Forms.Button Button_SaleBooks;
+        private System.Windows.Forms.Panel panel_CurrentSign;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label Label_UserRole;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Label_DateTime;
+        private System.Windows.Forms.Label Label_UserName;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer Timer_ChangeDashboardWidth;
+        private System.Windows.Forms.Timer Timer_UpdateTime;
+        private System.Windows.Forms.Timer Timer_MoveCurrentSign;
     }
 }
 

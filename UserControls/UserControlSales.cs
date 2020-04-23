@@ -1,21 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookShopManagement
+namespace BookShopManagement.UserControls
 {
-    public partial class MainForm : Form
+    public partial class UserControlSales : UserControl
     {
-        public MainForm()
+        public UserControlSales()
         {
             InitializeComponent();
         }
-
     }
 }
