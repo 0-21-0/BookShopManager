@@ -53,6 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AddNewBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddNewBookForm.Designer.cs">
+      <DependentUpon>AddNewBookForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FinishOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     <Compile Include="UserControls\UserControlSales.Designer.cs">
       <DependentUpon>UserControlSales.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AddNewBookForm.resx">
+      <DependentUpon>AddNewBookForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FinishOrderForm.resx">
       <DependentUpon>FinishOrderForm.cs</DependentUpon>
     </EmbeddedResource>

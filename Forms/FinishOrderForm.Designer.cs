@@ -129,7 +129,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(67, 154);
+            this.label3.Location = new System.Drawing.Point(67, 156);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 22);
             this.label3.TabIndex = 5;
@@ -138,7 +138,7 @@
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Location = new System.Drawing.Point(195, 151);
+            this.textBox2.Location = new System.Drawing.Point(195, 153);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(383, 29);
             this.textBox2.TabIndex = 7;

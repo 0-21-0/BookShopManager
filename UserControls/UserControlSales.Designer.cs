@@ -35,6 +35,7 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Button_Finish = new System.Windows.Forms.Button();
@@ -64,7 +65,6 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel_Right.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -144,6 +144,15 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(220, 194);
             this.panel4.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 187);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(220, 7);
+            this.panel1.TabIndex = 4;
             // 
             // label2
             // 
@@ -479,15 +488,6 @@
             this.label11.Size = new System.Drawing.Size(87, 22);
             this.label11.TabIndex = 3;
             this.label11.Text = "Discount:";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 187);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 7);
-            this.panel1.TabIndex = 4;
             // 
             // UserControlSales
             // 

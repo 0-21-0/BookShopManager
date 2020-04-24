@@ -166,7 +166,18 @@ namespace BookShopManagement
 
         private void Button_Purchased_Click(object sender, EventArgs e)
         {
-            MoveCurrentSign(Button_Purchased);
+            if (CurrentButtonClickCheck(Button_Purchased))
+            {
+                CollapseDashboard();
+            }
+            else
+            {
+                MoveCurrentSign(Button_Purchased);
+                UserControl control = new UserControlPurchaseDetails();
+                AddControlsToPanel(control);
+                currentUC.Dispose();
+                currentUC = control;
+            }
         }
 
         private void Button_Expenses_Click(object sender, EventArgs e)
