@@ -69,6 +69,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
@@ -80,6 +81,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.SeaGreen;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label3);
@@ -122,6 +124,7 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.Crimson;
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label4);
@@ -164,6 +167,7 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.label6);
@@ -206,6 +210,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
@@ -217,6 +222,7 @@
             // 
             // chart1
             // 
+            this.chart1.Anchor = System.Windows.Forms.AnchorStyles.None;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
@@ -235,6 +241,7 @@
             // 
             // Button_Refresh
             // 
+            this.Button_Refresh.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Button_Refresh.FlatAppearance.BorderSize = 0;
             this.Button_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("Button_Refresh.Image")));
@@ -251,6 +258,7 @@
             // 
             // circularProgressBar1
             // 
+            this.circularProgressBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
             this.circularProgressBar1.AnimationSpeed = 500;
             this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
@@ -282,6 +290,7 @@
             // 
             // circularProgressBar2
             // 
+            this.circularProgressBar2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.circularProgressBar2.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
             this.circularProgressBar2.AnimationSpeed = 500;
             this.circularProgressBar2.BackColor = System.Drawing.Color.Transparent;
@@ -313,6 +322,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
@@ -324,6 +334,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
@@ -335,6 +346,7 @@
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));

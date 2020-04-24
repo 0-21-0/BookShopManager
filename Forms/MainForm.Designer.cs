@@ -295,7 +295,8 @@
             // 
             this.Button_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Button_Close.FlatAppearance.BorderSize = 0;
-            this.Button_Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Button_Close.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Button_Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Button_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Close.Image = ((System.Drawing.Image)(resources.GetObject("Button_Close.Image")));
             this.Button_Close.Location = new System.Drawing.Point(935, 0);
@@ -423,6 +424,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel_DashBoard.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

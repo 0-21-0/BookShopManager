@@ -53,6 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FinishOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FinishOrderForm.Designer.cs">
+      <DependentUpon>FinishOrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,12 +73,21 @@
     <Compile Include="UserControls\UserControlHome.Designer.cs">
       <DependentUpon>UserControlHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UserControlPurchaseDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlPurchaseDetails.Designer.cs">
+      <DependentUpon>UserControlPurchaseDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UserControlSales.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\UserControlSales.Designer.cs">
       <DependentUpon>UserControlSales.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\FinishOrderForm.resx">
+      <DependentUpon>FinishOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +102,9 @@
     </Compile>
     <EmbeddedResource Include="UserControls\UserControlHome.resx">
       <DependentUpon>UserControlHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlPurchaseDetails.resx">
+      <DependentUpon>UserControlPurchaseDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControlSales.resx">
       <DependentUpon>UserControlSales.cs</DependentUpon>

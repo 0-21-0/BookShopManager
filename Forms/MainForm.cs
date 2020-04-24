@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace BookShopManagement
 {
@@ -16,17 +17,12 @@ namespace BookShopManagement
         bool isCollapse;
         readonly int dashboardWidth;
         Button currentChecked;
-        System.Windows.Forms.UserControl currentUC;
+        UserControl currentUC;
         public MainForm()
         {
             InitializeComponent();
             isCollapse = false;
             dashboardWidth = panel_DashBoard.Width;
-            Label_DateTime.Text = DateTime.Now.ToString("HH:mm:ss");
-            Timer_UpdateTime.Start();
-            currentChecked = Button_Home;
-            currentUC = new UserControlHome();
-            AddControlsToPanel(currentUC);
         }
 
         private void Button_Close_Click(object sender, EventArgs e)
@@ -90,18 +86,7 @@ namespace BookShopManagement
         /// <param name="e"></param>
         private void PictureBox_Logo_Click(object sender, EventArgs e)
         {
-            if (!isCollapse)
-            {
-                Label_ShopName.Visible = false;
-                Label_Position.Visible = false;
-                // panel_DashBoard.Width = 70;
-            }
-            else
-            {
-                // panel_DashBoard.Width = dashboardWidth - 10;
-            }
-            
-            Timer_ChangeDashboardWidth.Start();
+            CollapseDashboard();
         }
 
         private void Timer_UpdateTime_Tick(object sender, EventArgs e)
@@ -149,10 +134,14 @@ namespace BookShopManagement
         }
         private void Button_Home_Click(object sender, EventArgs e)
         {
-            MoveCurrentSign(Button_Home);
-            if (!currentUC.GetType().Name.Equals("UserControlHome"))
+            if (CurrentButtonClickCheck(Button_Home))
             {
-                System.Windows.Forms.UserControl control = new UserControlHome();
+                CollapseDashboard();
+            }
+            else
+            {
+                MoveCurrentSign(Button_Home);
+                UserControl control = new UserControlHome();
                 AddControlsToPanel(control);
                 currentUC.Dispose();
                 currentUC = control;
@@ -161,7 +150,18 @@ namespace BookShopManagement
 
         private void Button_SaleBooks_Click(object sender, EventArgs e)
         {
-            MoveCurrentSign(Button_SaleBooks);
+            if (CurrentButtonClickCheck(Button_SaleBooks))
+            {
+                CollapseDashboard();
+            }
+            else
+            {
+                MoveCurrentSign(Button_SaleBooks);
+                UserControl control = new UserControlSales();
+                AddControlsToPanel(control);
+                currentUC.Dispose();
+                currentUC = control;
+            }
         }
 
         private void Button_Purchased_Click(object sender, EventArgs e)
@@ -194,6 +194,45 @@ namespace BookShopManagement
             control.Dock = DockStyle.Fill;
             panel_Controls.Controls.Clear();
             panel_Controls.Controls.Add(control);
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            Label_DateTime.Text = DateTime.Now.ToString("HH:mm:ss");
+            Timer_UpdateTime.Start();
+            currentChecked = Button_Home;
+            currentUC = new UserControlHome();
+            AddControlsToPanel(currentUC);
+        }
+
+        private void CollapseDashboard()
+        {
+            if (!isCollapse)
+            {
+                Label_ShopName.Visible = false;
+                Label_Position.Visible = false;
+                // panel_DashBoard.Width = 70;
+            }
+            else
+            {
+                // panel_DashBoard.Width = dashboardWidth - 10;
+            }
+
+            Timer_ChangeDashboardWidth.Start();
+        }
+
+        /// <summary>
+        /// 如果点击了当前的导航按钮，返回true
+        /// </summary>
+        /// <param name="clickedButton">被点击的按钮</param>
+        /// <returns></returns>
+        private bool CurrentButtonClickCheck(Button clickedButton)
+        {
+            if (clickedButton == currentChecked)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

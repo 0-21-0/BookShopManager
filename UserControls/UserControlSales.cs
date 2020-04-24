@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BookShopManagement.Forms;
 
 namespace BookShopManagement.UserControls
 {
@@ -15,6 +16,14 @@ namespace BookShopManagement.UserControls
         public UserControlSales()
         {
             InitializeComponent();
+        }
+
+        private void Button_Finish_Click(object sender, EventArgs e)
+        {
+            using(FinishOrderForm finishOrderForm = new FinishOrderForm())
+            {
+                finishOrderForm.ShowDialog();
+            }
         }
     }
 }
