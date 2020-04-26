@@ -43,7 +43,7 @@
             this.Label_Position = new System.Windows.Forms.Label();
             this.Label_ShopName = new System.Windows.Forms.Label();
             this.PictureBox_Logo = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.Panel_Title = new System.Windows.Forms.Panel();
             this.Button_Minimize = new System.Windows.Forms.Button();
             this.Button_Close = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -60,7 +60,7 @@
             this.panel_DashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Logo)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.Panel_Title.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -273,19 +273,19 @@
             this.PictureBox_Logo.TabStop = false;
             this.PictureBox_Logo.Click += new System.EventHandler(this.PictureBox_Logo_Click);
             // 
-            // panel2
+            // Panel_Title
             // 
-            this.panel2.Controls.Add(this.Button_Minimize);
-            this.panel2.Controls.Add(this.Button_Close);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(215, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(985, 50);
-            this.panel2.TabIndex = 1;
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
-            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseMove);
-            this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseUp);
+            this.Panel_Title.Controls.Add(this.Button_Minimize);
+            this.Panel_Title.Controls.Add(this.Button_Close);
+            this.Panel_Title.Controls.Add(this.label6);
+            this.Panel_Title.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel_Title.Location = new System.Drawing.Point(215, 0);
+            this.Panel_Title.Name = "Panel_Title";
+            this.Panel_Title.Size = new System.Drawing.Size(985, 50);
+            this.Panel_Title.TabIndex = 1;
+            this.Panel_Title.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_Title_MouseDown);
+            this.Panel_Title.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Panel_Title_MouseMove);
+            this.Panel_Title.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseUp);
             // 
             // Button_Minimize
             // 
@@ -430,7 +430,7 @@
             this.ClientSize = new System.Drawing.Size(1200, 720);
             this.Controls.Add(this.panel_Controls);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.Panel_Title);
             this.Controls.Add(this.panel_DashBoard);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
@@ -444,8 +444,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Logo)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.Panel_Title.ResumeLayout(false);
+            this.Panel_Title.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -459,7 +459,7 @@
         private System.Windows.Forms.Label Label_Position;
         private System.Windows.Forms.Label Label_ShopName;
         private System.Windows.Forms.PictureBox PictureBox_Logo;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel Panel_Title;
         private System.Windows.Forms.Button Button_Minimize;
         private System.Windows.Forms.Button Button_Close;
         private System.Windows.Forms.Panel panel3;

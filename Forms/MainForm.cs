@@ -232,7 +232,15 @@ namespace BookShopManagement
 
         private void Button_Settings_Click(object sender, EventArgs e)
         {
-            MoveCurrentSign(Button_Settings);
+            
+            if (CurrentButtonClickCheck(Button_Settings))
+            {
+                CollapseDashboard();
+            }
+            else
+            {
+                // MoveCurrentSign(Button_Settings);
+            }
         }
 
         private void AddControlsToPanel(Control control)
@@ -306,6 +314,27 @@ namespace BookShopManagement
             if(e.Button == MouseButtons.Left)
             {
                 leftMouseDown = false;
+            }
+        }
+
+        private void Panel_Title_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(leftMouseDown)
+            {
+                Point mousePosition = Control.MousePosition;
+                mousePosition.Offset(-distance.X, -distance.Y);
+                Location = mousePosition;
+            }
+        }
+
+        private void Panel_Title_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                distance.X = e.X + panel_DashBoard.Width;
+                distance.Y = e.Y;
+                leftMouseDown = true;
+                MessageBox.Show(sender.ToString());
             }
         }
     }
