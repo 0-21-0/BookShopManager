@@ -70,6 +70,9 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(780, 10);
             this.panel7.TabIndex = 8;
+            this.panel7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AddNewBookForm_MouseDown);
+            this.panel7.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AddNewBookForm_MouseMove);
+            this.panel7.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AddNewBookForm_MouseUp);
             // 
             // panel4
             // 
@@ -79,6 +82,9 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(780, 10);
             this.panel4.TabIndex = 7;
+            this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AddNewBookForm_MouseDown);
+            this.panel4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AddNewBookForm_MouseMove);
+            this.panel4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AddNewBookForm_MouseUp);
             // 
             // panel3
             // 
@@ -88,6 +94,9 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(10, 450);
             this.panel3.TabIndex = 6;
+            this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AddNewBookForm_MouseDown);
+            this.panel3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AddNewBookForm_MouseMove);
+            this.panel3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AddNewBookForm_MouseUp);
             // 
             // panel1
             // 
@@ -97,6 +106,9 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(10, 450);
             this.panel1.TabIndex = 5;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AddNewBookForm_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AddNewBookForm_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AddNewBookForm_MouseUp);
             // 
             // textBox6
             // 
@@ -158,6 +170,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label7
             // 
@@ -388,7 +401,7 @@
             this.Button_Close.ForeColor = System.Drawing.Color.White;
             this.Button_Close.Image = ((System.Drawing.Image)(resources.GetObject("Button_Close.Image")));
             this.Button_Close.Location = new System.Drawing.Point(742, 13);
-            this.Button_Close.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.Button_Close.Margin = new System.Windows.Forms.Padding(0);
             this.Button_Close.Name = "Button_Close";
             this.Button_Close.Size = new System.Drawing.Size(45, 45);
             this.Button_Close.TabIndex = 26;

@@ -12,13 +12,19 @@ namespace BookShopManagement.Forms
 {
     public partial class AddNewBookForm : Form
     {
-        private Point formPoint;
+        /// <summary>
+        /// 记录MouseDown触发时，鼠标到Form左上角的距离
+        /// </summary>
+        private Point distance;
+        /// <summary>
+        /// 鼠标左键按下为真
+        /// </summary>
         private bool leftMouseDown;
         public AddNewBookForm()
         {
             InitializeComponent();
             leftMouseDown = false;
-            formPoint = new Point();
+            distance = new Point();
         }
 
         private void Button_Save_Click(object sender, EventArgs e)
@@ -36,9 +42,8 @@ namespace BookShopManagement.Forms
             if(e.Button == MouseButtons.Left)
             {
                 leftMouseDown = true;
-                // 获取鼠标单击的X、Y坐标
-                formPoint.X = e.X;
-                formPoint.Y = e.Y;
+                distance.X = e.X;
+                distance.Y = e.Y;
             }
         }
 
@@ -54,9 +59,17 @@ namespace BookShopManagement.Forms
         {
             if (leftMouseDown)
             {
-                Point mouseSet = Control.MousePosition; // 获取鼠标的位置
-                mouseSet.Offset(-formPoint.X, -formPoint.Y);// 
-                Location = mouseSet;
+                Point mousePositon = Control.MousePosition;
+                mousePositon.Offset(-distance.X, -distance.Y);
+                Location = mousePositon;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using(AddCategoryForm addCategoryForm = new AddCategoryForm())
+            {
+                addCategoryForm.ShowDialog();
             }
         }
     }

@@ -53,11 +53,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AddCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddCategoryForm.Designer.cs">
+      <DependentUpon>AddCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddExpenseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddExpenseForm.Designer.cs">
+      <DependentUpon>AddExpenseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddNewBookForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\AddNewBookForm.Designer.cs">
       <DependentUpon>AddNewBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddStockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddStockForm.Designer.cs">
+      <DependentUpon>AddStockForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FinishOrderForm.cs">
       <SubType>Form</SubType>
@@ -79,6 +97,18 @@
     <Compile Include="UserControls\UserControlHome.Designer.cs">
       <DependentUpon>UserControlHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UserControlManagerExpense.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlManagerExpense.Designer.cs">
+      <DependentUpon>UserControlManagerExpense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlManagerUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlManagerUser.Designer.cs">
+      <DependentUpon>UserControlManagerUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UserControlPurchaseDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -91,8 +121,23 @@
     <Compile Include="UserControls\UserControlSales.Designer.cs">
       <DependentUpon>UserControlSales.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UserControlViewSales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlViewSales.Designer.cs">
+      <DependentUpon>UserControlViewSales.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\AddCategoryForm.resx">
+      <DependentUpon>AddCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddExpenseForm.resx">
+      <DependentUpon>AddExpenseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddNewBookForm.resx">
       <DependentUpon>AddNewBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddStockForm.resx">
+      <DependentUpon>AddStockForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FinishOrderForm.resx">
       <DependentUpon>FinishOrderForm.cs</DependentUpon>
@@ -112,11 +157,20 @@
     <EmbeddedResource Include="UserControls\UserControlHome.resx">
       <DependentUpon>UserControlHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlManagerExpense.resx">
+      <DependentUpon>UserControlManagerExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlManagerUser.resx">
+      <DependentUpon>UserControlManagerUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControlPurchaseDetails.resx">
       <DependentUpon>UserControlPurchaseDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControlSales.resx">
       <DependentUpon>UserControlSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlViewSales.resx">
+      <DependentUpon>UserControlViewSales.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

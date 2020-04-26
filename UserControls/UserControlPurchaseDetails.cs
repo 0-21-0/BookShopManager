@@ -30,5 +30,13 @@ namespace BookShopManagement.UserControls
                 addNewBookForm.ShowDialog();
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (AddCategoryForm addCategoryForm = new AddCategoryForm())
+            {
+                addCategoryForm.ShowDialog();
+            }
+        }
     }
 }

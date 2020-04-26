@@ -10,24 +10,18 @@ using System.Windows.Forms;
 
 namespace BookShopManagement.Forms
 {
-    
-    public partial class FinishOrderForm :Form
+    public partial class AddExpenseForm : Form
     {
         private Point distance = new Point();
         private bool leftMouseDown = false;
-        public FinishOrderForm()
+        public AddExpenseForm()
         {
             InitializeComponent();
         }
 
-        private void Button_Done_Click(object sender, EventArgs e)
+        private void AddExpenseForm_MouseDown(object sender, MouseEventArgs e)
         {
-            this.Dispose();
-        }
-
-        private void FinishOrderForm_MouseDown(object sender, MouseEventArgs e)
-        {
-            if(e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
                 distance.X = e.X;
                 distance.Y = e.Y;
@@ -35,9 +29,9 @@ namespace BookShopManagement.Forms
             }
         }
 
-        private void FinishOrderForm_MouseUp(object sender, MouseEventArgs e)
+        private void AddExpenseForm_MouseMove(object sender, MouseEventArgs e)
         {
-            if(leftMouseDown)
+            if (leftMouseDown)
             {
                 Point mousePosition = Control.MousePosition;
                 mousePosition.Offset(-distance.X, -distance.Y);
@@ -45,12 +39,17 @@ namespace BookShopManagement.Forms
             }
         }
 
-        private void FinishOrderForm_MouseMove(object sender, MouseEventArgs e)
+        private void AddExpenseForm_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
                 leftMouseDown = false;
             }
+        }
+
+        private void Button_Close_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FinishOrderForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.Panel_BorderTop = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.PictureBox_Logo = new System.Windows.Forms.PictureBox();
@@ -57,6 +57,9 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(10, 415);
             this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseUp);
             // 
             // panel3
             // 
@@ -66,15 +69,21 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(10, 415);
             this.panel3.TabIndex = 1;
+            this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseDown);
+            this.panel3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseMove);
+            this.panel3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseUp);
             // 
-            // panel4
+            // Panel_BorderTop
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(10, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(624, 10);
-            this.panel4.TabIndex = 2;
+            this.Panel_BorderTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.Panel_BorderTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel_BorderTop.Location = new System.Drawing.Point(10, 0);
+            this.Panel_BorderTop.Name = "Panel_BorderTop";
+            this.Panel_BorderTop.Size = new System.Drawing.Size(624, 10);
+            this.Panel_BorderTop.TabIndex = 2;
+            this.Panel_BorderTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseDown);
+            this.Panel_BorderTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseMove);
+            this.Panel_BorderTop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseUp);
             // 
             // panel7
             // 
@@ -84,6 +93,9 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(624, 10);
             this.panel7.TabIndex = 4;
+            this.panel7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseDown);
+            this.panel7.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseMove);
+            this.panel7.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseUp);
             // 
             // label1
             // 
@@ -235,7 +247,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.Panel_BorderTop);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -245,6 +257,9 @@
             this.Name = "FinishOrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FinishOrderForm";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FinishOrderForm_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -255,7 +270,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel Panel_BorderTop;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox PictureBox_Logo;

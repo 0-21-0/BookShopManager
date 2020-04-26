@@ -14,6 +14,8 @@ namespace BookShopManagement
 {
     public partial class MainForm : Form
     {
+        private Point distance = new Point();
+        private bool leftMouseDown = false;
         bool isCollapse;
         readonly int dashboardWidth;
         Button currentChecked;
@@ -182,17 +184,50 @@ namespace BookShopManagement
 
         private void Button_Expenses_Click(object sender, EventArgs e)
         {
-            MoveCurrentSign(Button_Expenses);
+            if (CurrentButtonClickCheck(Button_Expenses))
+            {
+                CollapseDashboard();
+            }
+            else
+            {
+                MoveCurrentSign(Button_Expenses);
+                UserControl control = new UserControlManagerExpense();
+                AddControlsToPanel(control);
+                currentUC.Dispose();
+                currentUC = control;
+            }
         }
 
         private void Button_Users_Click(object sender, EventArgs e)
         {
-            MoveCurrentSign(Button_Users);
+            if (CurrentButtonClickCheck(Button_Users))
+            {
+                CollapseDashboard();
+            }
+            else
+            {
+                MoveCurrentSign(Button_Users);
+                UserControl control = new UserControlManagerUser();
+                AddControlsToPanel(control);
+                currentUC.Dispose();
+                currentUC = control;
+            }
         }
 
         private void Button_ViewSales_Click(object sender, EventArgs e)
         {
-            MoveCurrentSign(Button_ViewSales);
+            if (CurrentButtonClickCheck(Button_ViewSales))
+            {
+                CollapseDashboard();
+            }
+            else
+            {
+                MoveCurrentSign(Button_ViewSales);
+                UserControl control = new UserControlViewSales();
+                AddControlsToPanel(control);
+                currentUC.Dispose();
+                currentUC = control;
+            }
         }
 
         private void Button_Settings_Click(object sender, EventArgs e)
@@ -244,6 +279,34 @@ namespace BookShopManagement
                 return true;
             }
             return false;
+        }
+
+        private void MainForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                distance.X = e.X;
+                distance.Y = e.Y;
+                leftMouseDown = true;
+            }
+        }
+
+        private void MainForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (leftMouseDown)
+            {
+                Point mousePosition = Control.MousePosition;
+                mousePosition.Offset(-distance.X, -distance.Y);
+                Location = mousePosition;
+            }
+        }
+
+        private void MainForm_MouseUp(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Left)
+            {
+                leftMouseDown = false;
+            }
         }
     }
 }

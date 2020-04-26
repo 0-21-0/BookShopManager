@@ -1,33 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BookShopManagement.Forms;
 
-namespace BookShopManagement.Forms
+namespace BookShopManagement.UserControls
 {
-    
-    public partial class FinishOrderForm :Form
+    public partial class UserControlManagerExpense : UserControl
     {
         private Point distance = new Point();
         private bool leftMouseDown = false;
-        public FinishOrderForm()
+        public UserControlManagerExpense()
         {
             InitializeComponent();
         }
 
-        private void Button_Done_Click(object sender, EventArgs e)
+        private void UserControlManagerExpense_MouseDown(object sender, MouseEventArgs e)
         {
-            this.Dispose();
-        }
-
-        private void FinishOrderForm_MouseDown(object sender, MouseEventArgs e)
-        {
-            if(e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
                 distance.X = e.X;
                 distance.Y = e.Y;
@@ -35,9 +30,9 @@ namespace BookShopManagement.Forms
             }
         }
 
-        private void FinishOrderForm_MouseUp(object sender, MouseEventArgs e)
+        private void UserControlManagerExpense_MouseMove(object sender, MouseEventArgs e)
         {
-            if(leftMouseDown)
+            if (leftMouseDown)
             {
                 Point mousePosition = Control.MousePosition;
                 mousePosition.Offset(-distance.X, -distance.Y);
@@ -45,11 +40,19 @@ namespace BookShopManagement.Forms
             }
         }
 
-        private void FinishOrderForm_MouseMove(object sender, MouseEventArgs e)
+        private void UserControlManagerExpense_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
                 leftMouseDown = false;
+            }
+        }
+
+        private void Button_AddNewBook_Click(object sender, EventArgs e)
+        {
+            using(AddExpenseForm addExpenseForm = new AddExpenseForm())
+            {
+                addExpenseForm.ShowDialog();
             }
         }
     }
