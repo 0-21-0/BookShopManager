@@ -41,9 +41,18 @@ namespace BookShopManagement.Forms
         {
             if(e.Button == MouseButtons.Left)
             {
+                if (this.GetType() == sender.GetType())
+                {
+                    distance.X = e.X;
+                    distance.Y = e.Y;
+
+                }
+                else
+                {
+                    distance.X = e.X + ((Control)sender).Location.X;
+                    distance.Y = e.Y + ((Control)sender).Location.Y;
+                }
                 leftMouseDown = true;
-                distance.X = e.X;
-                distance.Y = e.Y;
             }
         }
 
