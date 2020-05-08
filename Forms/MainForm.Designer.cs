@@ -107,7 +107,7 @@
             this.Button_Settings.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Button_Settings.Size = new System.Drawing.Size(215, 50);
             this.Button_Settings.TabIndex = 1;
-            this.Button_Settings.Text = "   Settings";
+            this.Button_Settings.Text = "   设置";
             this.Button_Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_Settings.UseVisualStyleBackColor = true;
             this.Button_Settings.Click += new System.EventHandler(this.Button_Settings_Click);
@@ -126,7 +126,7 @@
             this.Button_ViewSales.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Button_ViewSales.Size = new System.Drawing.Size(215, 50);
             this.Button_ViewSales.TabIndex = 1;
-            this.Button_ViewSales.Text = "   View Sales";
+            this.Button_ViewSales.Text = "   推送信息";
             this.Button_ViewSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_ViewSales.UseVisualStyleBackColor = true;
             this.Button_ViewSales.Click += new System.EventHandler(this.Button_ViewSales_Click);
@@ -145,7 +145,7 @@
             this.Button_Users.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Button_Users.Size = new System.Drawing.Size(215, 50);
             this.Button_Users.TabIndex = 1;
-            this.Button_Users.Text = "   Users";
+            this.Button_Users.Text = "   个人信息";
             this.Button_Users.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_Users.UseVisualStyleBackColor = true;
             this.Button_Users.Click += new System.EventHandler(this.Button_Users_Click);
@@ -164,7 +164,7 @@
             this.Button_Expenses.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Button_Expenses.Size = new System.Drawing.Size(215, 50);
             this.Button_Expenses.TabIndex = 1;
-            this.Button_Expenses.Text = "   Expenses";
+            this.Button_Expenses.Text = "   预约讲座";
             this.Button_Expenses.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_Expenses.UseVisualStyleBackColor = true;
             this.Button_Expenses.Click += new System.EventHandler(this.Button_Expenses_Click);
@@ -183,7 +183,7 @@
             this.Button_Purchased.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Button_Purchased.Size = new System.Drawing.Size(215, 50);
             this.Button_Purchased.TabIndex = 1;
-            this.Button_Purchased.Text = "   Purchased";
+            this.Button_Purchased.Text = "   添加讲座";
             this.Button_Purchased.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_Purchased.UseVisualStyleBackColor = true;
             this.Button_Purchased.Click += new System.EventHandler(this.Button_Purchased_Click);
@@ -202,7 +202,7 @@
             this.Button_SaleBooks.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Button_SaleBooks.Size = new System.Drawing.Size(215, 50);
             this.Button_SaleBooks.TabIndex = 1;
-            this.Button_SaleBooks.Text = "   Sale Books";
+            this.Button_SaleBooks.Text = "   讲座列表";
             this.Button_SaleBooks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_SaleBooks.UseVisualStyleBackColor = true;
             this.Button_SaleBooks.Click += new System.EventHandler(this.Button_SaleBooks_Click);
@@ -221,7 +221,7 @@
             this.Button_Home.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Button_Home.Size = new System.Drawing.Size(215, 50);
             this.Button_Home.TabIndex = 1;
-            this.Button_Home.Text = "   Home";
+            this.Button_Home.Text = "   主页";
             this.Button_Home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_Home.UseVisualStyleBackColor = true;
             this.Button_Home.Click += new System.EventHandler(this.Button_Home_Click);
@@ -245,22 +245,22 @@
             this.Label_Position.AutoSize = true;
             this.Label_Position.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Label_Position.ForeColor = System.Drawing.Color.White;
-            this.Label_Position.Location = new System.Drawing.Point(28, 96);
+            this.Label_Position.Location = new System.Drawing.Point(62, 96);
             this.Label_Position.Name = "Label_Position";
-            this.Label_Position.Size = new System.Drawing.Size(159, 22);
+            this.Label_Position.Size = new System.Drawing.Size(90, 22);
             this.Label_Position.TabIndex = 1;
-            this.Label_Position.Text = "Kangbashen Erdos";
+            this.Label_Position.Text = "内蒙古大学";
             // 
             // Label_ShopName
             // 
             this.Label_ShopName.AutoSize = true;
             this.Label_ShopName.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Label_ShopName.ForeColor = System.Drawing.Color.White;
-            this.Label_ShopName.Location = new System.Drawing.Point(30, 74);
+            this.Label_ShopName.Location = new System.Drawing.Point(38, 74);
             this.Label_ShopName.Name = "Label_ShopName";
-            this.Label_ShopName.Size = new System.Drawing.Size(154, 22);
+            this.Label_ShopName.Size = new System.Drawing.Size(138, 22);
             this.Label_ShopName.TabIndex = 1;
-            this.Label_ShopName.Text = "North Book Shop";
+            this.Label_ShopName.Text = "讲座信息管理系统";
             // 
             // PictureBox_Logo
             // 
@@ -322,9 +322,9 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label6.Location = new System.Drawing.Point(39, 12);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(362, 26);
+            this.label6.Size = new System.Drawing.Size(278, 26);
             this.label6.TabIndex = 1;
-            this.label6.Text = "North Books Shop, NLI Market Erdos";
+            this.label6.Text = "讲座信息管理系统，内蒙古大学";
             // 
             // panel3
             // 
@@ -350,9 +350,9 @@
             this.Label_UserRole.ForeColor = System.Drawing.Color.White;
             this.Label_UserRole.Location = new System.Drawing.Point(138, 50);
             this.Label_UserRole.Name = "Label_UserRole";
-            this.Label_UserRole.Size = new System.Drawing.Size(64, 22);
+            this.Label_UserRole.Size = new System.Drawing.Size(74, 22);
             this.Label_UserRole.TabIndex = 1;
-            this.Label_UserRole.Text = "Admin";
+            this.Label_UserRole.Text = "Listener";
             // 
             // label3
             // 
@@ -361,9 +361,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(40, 50);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 22);
+            this.label3.Size = new System.Drawing.Size(47, 22);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Role:";
+            this.label3.Text = "角色:";
             // 
             // Label_DateTime
             // 
@@ -395,9 +395,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(40, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 22);
+            this.label2.Size = new System.Drawing.Size(90, 22);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Wlecome：";
+            this.label2.Text = "欢迎使用：";
             // 
             // panel_Controls
             // 

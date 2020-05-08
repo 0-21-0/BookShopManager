@@ -73,11 +73,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label1.Location = new System.Drawing.Point(322, 29);
+            this.label1.Location = new System.Drawing.Point(398, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(340, 30);
+            this.label1.Size = new System.Drawing.Size(189, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Sales and Purchase OverView";
+            this.label1.Text = "讲座进行情况一览";
             // 
             // panel1
             // 
@@ -118,9 +118,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(13, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 19);
+            this.label2.Size = new System.Drawing.Size(83, 19);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Sold Books:";
+            this.label2.Text = "已完成讲座:";
             // 
             // panel2
             // 
@@ -161,9 +161,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(13, 25);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 19);
+            this.label5.Size = new System.Drawing.Size(97, 19);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Pusrchased Books:";
+            this.label5.Text = "全部参与讲座:";
             // 
             // panel3
             // 
@@ -204,9 +204,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(13, 25);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 19);
+            this.label7.Size = new System.Drawing.Size(69, 19);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Customers:";
+            this.label7.Text = "预约讲座:";
             // 
             // label8
             // 
@@ -216,9 +216,9 @@
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label8.Location = new System.Drawing.Point(35, 264);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(146, 22);
+            this.label8.Size = new System.Drawing.Size(143, 22);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Weekly Repoort:";
+            this.label8.Text = "最近七天参与讲座:";
             // 
             // chart1
             // 
@@ -231,7 +231,7 @@
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "讲座";
             series1.Points.Add(dataPoint1);
             series1.Points.Add(dataPoint2);
             this.chart1.Series.Add(series1);
@@ -326,11 +326,11 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label9.Location = new System.Drawing.Point(571, 476);
+            this.label9.Location = new System.Drawing.Point(562, 476);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 22);
+            this.label9.Size = new System.Drawing.Size(90, 22);
             this.label9.TabIndex = 0;
-            this.label9.Text = "Recived";
+            this.label9.Text = "已进行讲座";
             // 
             // label10
             // 
@@ -340,9 +340,9 @@
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label10.Location = new System.Drawing.Point(544, 306);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(244, 22);
+            this.label10.Size = new System.Drawing.Size(106, 22);
             this.label10.TabIndex = 0;
-            this.label10.Text = "% Amount Recived and Paid:";
+            this.label10.Text = "讲座完成率：";
             // 
             // label11
             // 
@@ -350,11 +350,11 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label11.Location = new System.Drawing.Point(760, 476);
+            this.label11.Location = new System.Drawing.Point(738, 476);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 22);
+            this.label11.Size = new System.Drawing.Size(90, 22);
             this.label11.TabIndex = 0;
-            this.label11.Text = "Paid";
+            this.label11.Text = "已完成讲座";
             // 
             // UserControlHome
             // 
