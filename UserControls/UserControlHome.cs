@@ -24,13 +24,22 @@ namespace BookShopManagement.UserControls
             var points = chart1.Series[0].Points;
             points.Clear();
             Random random = new Random();
-            points.AddXY(1, random.Next(0,20));
-            points.AddXY(2, random.Next(0, 20));
-            points.AddXY(3, random.Next(0, 20));
-            points.AddXY(4, random.Next(0, 20));
-            points.AddXY(5, random.Next(0, 20));
-            points.AddXY(6, random.Next(0, 20));
-            points.AddXY(7, random.Next(0, 20));
+            points.AddXY(1, random.Next(0, 10));
+            points.AddXY(2, random.Next(0, 10));
+            points.AddXY(3, random.Next(0, 10));
+            points.AddXY(4, random.Next(0, 10));
+            points.AddXY(5, random.Next(0, 10));
+            points.AddXY(6, random.Next(0, 10));
+            points.AddXY(7, random.Next(0, 10));
+            var studentNumber = chart1.Series[1].Points;
+            studentNumber.Clear();
+            studentNumber.AddXY(1, random.Next(0, 5));
+            studentNumber.AddXY(2, random.Next(0, 5));
+            studentNumber.AddXY(3, random.Next(0, 5));
+            studentNumber.AddXY(4, random.Next(0, 5));
+            studentNumber.AddXY(5, random.Next(0, 5));
+            studentNumber.AddXY(6, random.Next(0, 5));
+            studentNumber.AddXY(7, random.Next(0, 5));
         }
 
         private void Button_Refresh_Click(object sender, EventArgs e)
