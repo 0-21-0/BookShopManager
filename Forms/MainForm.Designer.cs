@@ -183,7 +183,7 @@
             this.Button_Purchased.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Button_Purchased.Size = new System.Drawing.Size(215, 50);
             this.Button_Purchased.TabIndex = 1;
-            this.Button_Purchased.Text = "   添加讲座";
+            this.Button_Purchased.Text = "   讲座列表";
             this.Button_Purchased.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_Purchased.UseVisualStyleBackColor = true;
             this.Button_Purchased.Click += new System.EventHandler(this.Button_Purchased_Click);
@@ -202,7 +202,7 @@
             this.Button_SaleBooks.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Button_SaleBooks.Size = new System.Drawing.Size(215, 50);
             this.Button_SaleBooks.TabIndex = 1;
-            this.Button_SaleBooks.Text = "   讲座列表";
+            this.Button_SaleBooks.Text = "   添加讲座";
             this.Button_SaleBooks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_SaleBooks.UseVisualStyleBackColor = true;
             this.Button_SaleBooks.Click += new System.EventHandler(this.Button_SaleBooks_Click);
@@ -350,9 +350,9 @@
             this.Label_UserRole.ForeColor = System.Drawing.Color.White;
             this.Label_UserRole.Location = new System.Drawing.Point(138, 50);
             this.Label_UserRole.Name = "Label_UserRole";
-            this.Label_UserRole.Size = new System.Drawing.Size(74, 22);
+            this.Label_UserRole.Size = new System.Drawing.Size(64, 22);
             this.Label_UserRole.TabIndex = 1;
-            this.Label_UserRole.Text = "Listener";
+            this.Label_UserRole.Text = "Admin";
             // 
             // label3
             // 
