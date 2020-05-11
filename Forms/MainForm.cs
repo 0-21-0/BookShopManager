@@ -176,6 +176,7 @@ namespace BookShopManagement
             {
                 MoveCurrentSign(Button_Purchased);
                 UserControl control = new UserControlPurchaseDetails();
+                //UserControl control = new UserControlTemp();
                 AddControlsToPanel(control);
                 currentUC.Dispose();
                 currentUC = control;
@@ -223,7 +224,8 @@ namespace BookShopManagement
             else
             {
                 MoveCurrentSign(Button_ViewSales);
-                UserControl control = new UserControlViewSales();
+                //UserControl control = new UserControlViewSales();
+                UserControl control = new UserControlPushTemp();
                 AddControlsToPanel(control);
                 currentUC.Dispose();
                 currentUC = control;
@@ -239,7 +241,11 @@ namespace BookShopManagement
             }
             else
             {
-                // MoveCurrentSign(Button_Settings);
+                MoveCurrentSign(Button_Settings);
+                UserControl control = new UserControlSettings();
+                AddControlsToPanel(control);
+                currentUC.Dispose();
+                currentUC = control;
             }
         }
 
@@ -252,8 +258,9 @@ namespace BookShopManagement
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            Label_DateTime.Text = DateTime.Now.ToString("HH:mm:ss");
-            Timer_UpdateTime.Start();
+            Label_DateTime.Text = "23:59:59";
+            //Label_DateTime.Text = DateTime.Now.ToString("HH:mm:ss");
+            //Timer_UpdateTime.Start();
             currentChecked = Button_Home;
             currentUC = new UserControlHome();
             AddControlsToPanel(currentUC);

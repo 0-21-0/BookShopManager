@@ -1,21 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookShopManagement.UserControls
+namespace BookShopManagement.Forms
 {
-    public partial class UserControlManagerUser : UserControl
+    public partial class ChoseLactureForm : Form
     {
-        public UserControlManagerUser()
+        public ChoseLactureForm()
         {
             InitializeComponent();
-            comboBox1.Text = "Admin";
         }
     }
 }

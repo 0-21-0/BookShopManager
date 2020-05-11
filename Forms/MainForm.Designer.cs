@@ -120,13 +120,13 @@
             this.Button_ViewSales.ForeColor = System.Drawing.Color.White;
             this.Button_ViewSales.Image = ((System.Drawing.Image)(resources.GetObject("Button_ViewSales.Image")));
             this.Button_ViewSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_ViewSales.Location = new System.Drawing.Point(0, 400);
+            this.Button_ViewSales.Location = new System.Drawing.Point(0, 350);
             this.Button_ViewSales.Margin = new System.Windows.Forms.Padding(0);
             this.Button_ViewSales.Name = "Button_ViewSales";
             this.Button_ViewSales.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Button_ViewSales.Size = new System.Drawing.Size(215, 50);
             this.Button_ViewSales.TabIndex = 1;
-            this.Button_ViewSales.Text = "   推送信息";
+            this.Button_ViewSales.Text = "   推送讲座信息";
             this.Button_ViewSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_ViewSales.UseVisualStyleBackColor = true;
             this.Button_ViewSales.Click += new System.EventHandler(this.Button_ViewSales_Click);
@@ -139,7 +139,7 @@
             this.Button_Users.ForeColor = System.Drawing.Color.White;
             this.Button_Users.Image = ((System.Drawing.Image)(resources.GetObject("Button_Users.Image")));
             this.Button_Users.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Users.Location = new System.Drawing.Point(0, 350);
+            this.Button_Users.Location = new System.Drawing.Point(0, 400);
             this.Button_Users.Margin = new System.Windows.Forms.Padding(0);
             this.Button_Users.Name = "Button_Users";
             this.Button_Users.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
@@ -164,7 +164,7 @@
             this.Button_Expenses.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Button_Expenses.Size = new System.Drawing.Size(215, 50);
             this.Button_Expenses.TabIndex = 1;
-            this.Button_Expenses.Text = "   预约讲座";
+            this.Button_Expenses.Text = "   提示信息设置";
             this.Button_Expenses.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Button_Expenses.UseVisualStyleBackColor = true;
             this.Button_Expenses.Click += new System.EventHandler(this.Button_Expenses_Click);

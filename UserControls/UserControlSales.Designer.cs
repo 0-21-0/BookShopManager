@@ -28,26 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "大变局中的中国与世界",
             "黄翔",
             "2020-04-02",
             "综合楼2楼阶梯教室"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "迈向“中国之治”新境界",
             "周建涛",
             "2020-04-10",
             "综合楼3楼阶梯教室"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "携手构建网络空间命运共同体",
             "刘雪峰",
             "2020-04-22",
             "综合楼4楼阶梯教室"}, -1);
             this.panel_Right = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -76,15 +80,11 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel_Right.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_Right
@@ -102,6 +102,15 @@
             this.panel_Right.Size = new System.Drawing.Size(317, 570);
             this.panel_Right.TabIndex = 0;
             // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(10, 38);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(297, 10);
+            this.panel9.TabIndex = 4;
+            // 
             // listView1
             // 
             this.listView1.AllowColumnReorder = true;
@@ -114,10 +123,11 @@
             this.listView1.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem7,
-            listViewItem8,
-            listViewItem9});
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
             this.listView1.Location = new System.Drawing.Point(10, 44);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(297, 332);
@@ -139,6 +149,32 @@
             // 
             this.columnHeader3.Text = "日期";
             this.columnHeader3.Width = 70;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "地点";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
+            this.panel8.Controls.Add(this.label5);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(10, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(297, 38);
+            this.panel8.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.label5.Location = new System.Drawing.Point(98, 4);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(101, 30);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "添加预览";
             // 
             // panel4
             // 
@@ -201,7 +237,7 @@
             this.Button_Finish.Name = "Button_Finish";
             this.Button_Finish.Size = new System.Drawing.Size(125, 33);
             this.Button_Finish.TabIndex = 1;
-            this.Button_Finish.Text = "Finsh";
+            this.Button_Finish.Text = "完成";
             this.Button_Finish.UseVisualStyleBackColor = false;
             this.Button_Finish.Click += new System.EventHandler(this.Button_Finish_Click);
             // 
@@ -216,7 +252,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(125, 33);
             this.button6.TabIndex = 1;
-            this.button6.Text = "Clear";
+            this.button6.Text = "清空";
             this.button6.UseVisualStyleBackColor = false;
             // 
             // panel7
@@ -458,43 +494,9 @@
             this.label11.TabIndex = 3;
             this.label11.Text = "开始时间:";
             // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "地点";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
-            this.panel8.Controls.Add(this.label5);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(10, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(297, 38);
-            this.panel8.TabIndex = 4;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(10, 38);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(297, 10);
-            this.panel9.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label5.Location = new System.Drawing.Point(98, 4);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 30);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "添加预览";
-            // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dateTimePicker1.Location = new System.Drawing.Point(429, 231);
             this.dateTimePicker1.Name = "dateTimePicker1";
@@ -526,11 +528,11 @@
             this.Name = "UserControlSales";
             this.Size = new System.Drawing.Size(985, 570);
             this.panel_Right.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

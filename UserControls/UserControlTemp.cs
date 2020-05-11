@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace BookShopManagement.UserControls
 {
-    public partial class UserControlManagerUser : UserControl
+    public partial class UserControlTemp : UserControl
     {
-        public UserControlManagerUser()
+        public UserControlTemp()
         {
             InitializeComponent();
-            comboBox1.Text = "Admin";
         }
     }
 }

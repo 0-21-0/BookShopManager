@@ -77,6 +77,12 @@
     <Compile Include="Forms\AddStockForm.Designer.cs">
       <DependentUpon>AddStockForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ChoseLactureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChoseLactureForm.Designer.cs">
+      <DependentUpon>ChoseLactureForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FinishOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,11 +121,29 @@
     <Compile Include="UserControls\UserControlPurchaseDetails.Designer.cs">
       <DependentUpon>UserControlPurchaseDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UserControlPushTemp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlPushTemp.Designer.cs">
+      <DependentUpon>UserControlPushTemp.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UserControlSales.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\UserControlSales.Designer.cs">
       <DependentUpon>UserControlSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlSettings.Designer.cs">
+      <DependentUpon>UserControlSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlTemp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlTemp.Designer.cs">
+      <DependentUpon>UserControlTemp.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UserControlViewSales.cs">
       <SubType>UserControl</SubType>
@@ -138,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddStockForm.resx">
       <DependentUpon>AddStockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChoseLactureForm.resx">
+      <DependentUpon>ChoseLactureForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FinishOrderForm.resx">
       <DependentUpon>FinishOrderForm.cs</DependentUpon>
@@ -166,8 +193,17 @@
     <EmbeddedResource Include="UserControls\UserControlPurchaseDetails.resx">
       <DependentUpon>UserControlPurchaseDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlPushTemp.resx">
+      <DependentUpon>UserControlPushTemp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControlSales.resx">
       <DependentUpon>UserControlSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlSettings.resx">
+      <DependentUpon>UserControlSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlTemp.resx">
+      <DependentUpon>UserControlTemp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControlViewSales.resx">
       <DependentUpon>UserControlViewSales.cs</DependentUpon>

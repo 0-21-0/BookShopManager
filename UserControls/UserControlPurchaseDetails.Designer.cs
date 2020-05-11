@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlPurchaseDetails));
             System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "大变局中的中国与世界",
@@ -43,7 +44,7 @@
             "迈向“中国之治”新境界",
             "周建涛",
             "2020-04-10",
-            "已结束",
+            "进行中",
             "计算机学院",
             "综合楼3楼阶梯教室",
             "下午2:30",
@@ -53,7 +54,7 @@
             "携手构建网络空间命运共同体",
             "刘雪峰",
             "2020-04-22",
-            "进行中",
+            "未开始",
             "计算机学院",
             "综合楼4楼阶梯教室",
             "上午9:00",
@@ -73,6 +74,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -130,6 +132,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label3);
@@ -140,6 +143,22 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(965, 50);
             this.panel2.TabIndex = 9;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(309, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(162, 50);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "修改讲座信息";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -155,11 +174,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(53, 10);
+            this.label2.Location = new System.Drawing.Point(33, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 30);
+            this.label2.Size = new System.Drawing.Size(145, 30);
             this.label2.TabIndex = 3;
-            this.label2.Text = "查看已发布讲座";
+            this.label2.Text = "已发布的讲座";
             // 
             // label3
             // 
@@ -328,5 +347,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.Button button1;
     }
 }

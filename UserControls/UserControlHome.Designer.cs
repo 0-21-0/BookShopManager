@@ -80,14 +80,15 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(103, 53);
+            this.label3.Location = new System.Drawing.Point(136, 53);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 36);
+            this.label3.Size = new System.Drawing.Size(49, 36);
             this.label3.TabIndex = 0;
-            this.label3.Text = "1000";
+            this.label3.Text = "88";
             // 
             // label2
             // 
@@ -96,9 +97,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(13, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 19);
+            this.label2.Size = new System.Drawing.Size(111, 19);
             this.label2.TabIndex = 0;
-            this.label2.Text = "已完成讲座:";
+            this.label2.Text = "当前进行讲座数:";
             // 
             // panel2
             // 
@@ -113,14 +114,15 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(102, 53);
+            this.label4.Location = new System.Drawing.Point(135, 53);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 36);
+            this.label4.Size = new System.Drawing.Size(49, 36);
             this.label4.TabIndex = 0;
-            this.label4.Text = "1234";
+            this.label4.Text = "66";
             // 
             // label5
             // 
@@ -129,9 +131,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(13, 13);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 19);
+            this.label5.Size = new System.Drawing.Size(111, 19);
             this.label5.TabIndex = 0;
-            this.label5.Text = "全部参与讲座:";
+            this.label5.Text = "即将开始讲座数:";
             // 
             // panel3
             // 
@@ -146,14 +148,15 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(121, 53);
+            this.label6.Location = new System.Drawing.Point(133, 53);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 36);
+            this.label6.Size = new System.Drawing.Size(49, 36);
             this.label6.TabIndex = 0;
-            this.label6.Text = "521";
+            this.label6.Text = "99";
             // 
             // label7
             // 
@@ -162,9 +165,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(13, 13);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 19);
+            this.label7.Size = new System.Drawing.Size(97, 19);
             this.label7.TabIndex = 0;
-            this.label7.Text = "预约讲座:";
+            this.label7.Text = "已完成讲座数:";
             // 
             // label8
             // 
@@ -177,6 +180,7 @@
             this.label8.Size = new System.Drawing.Size(159, 22);
             this.label8.TabIndex = 0;
             this.label8.Text = "最近七天进行的讲座:";
+            this.label8.Visible = false;
             // 
             // chart1
             // 
@@ -200,6 +204,7 @@
             this.chart1.Size = new System.Drawing.Size(756, 239);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";
+            this.chart1.Visible = false;
             // 
             // errorProvider1
             // 
